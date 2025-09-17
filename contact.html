@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Contact - My Portfolio{% endblock %}
+{% block content %}
+<section class="section">
+    <h2>Contact Me</h2>
+    <p>You can reach me through my social links below:</p>
+
+    <div class="quick-links">
+        <a href="https://www.facebook.com/dave.alonzopadre" target="_blank" class="btn facebook">
+            <img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook" class="logo"> Facebook
+        </a>
+        <a href="https://github.com/Carld-28" target="_blank" class="btn github">
+            <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub" class="logo"> GitHub
+        </a>
+    </div>
+</section>
+{% endblock %}

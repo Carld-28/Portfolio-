@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}About - My Portfolio{% endblock %}
+{% block content %}
+<br>
+<section class="section light">
+    <h2>About Me</h2>
+
+    <div class="profile-pic">
+        <img src="{{ url_for('static', filename='me.png') }}" alt="My Portfolio Picture">
+    </div>
+
+    <p>
+        Hi, I’m Carmelo Dave Padre.  
+        I'm currently a newbie in coding/programming, but I always do my best to support my team.
+    </p>
+
+    <div class="skills">
+        <div class="skill">
+            <span>BASIC PHP SKILL</span>
+        </div>
+        <div class="skill">
+            <span>BASIC SQL SKILL</span>
+        </div>
+        <div class="skill">
+            <span>BASIC PYTHON SKILL</span>
+        </div>
+    </div>
+</section>
+{% endblock %}
